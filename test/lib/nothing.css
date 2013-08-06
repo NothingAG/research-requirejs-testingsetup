@@ -1,0 +1,48 @@
+#testSelector {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#testSelector ul {
+  padding: 0;
+  margin: 0;
+}
+
+#testSelector li {
+  list-style: none;
+  font-size: 10px;
+}
+
+#testSelector li a {
+  width: 120px;
+  display: inline-block;
+  background: #3d3d3d;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+#testSelector li.current a {
+  width: 120px;
+  display: inline-block;
+  background: #3d3d3d;
+  color: #f6531d;
+  text-decoration: none;
+}
+
+#testSelector li a:hover {
+  background: #5d5d5d;
+}
+
+body:after {
+  content: "";
+  display: block;
+  height: 80px;
+  width: 80px;
+  background: url('sprites.png') no-repeat 0 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
